@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "name": "Premium Smartphone",
+      "price": 799.99,
+      "description": "Latest flagship smartphone with advanced camera system, 5G connectivity, and all-day battery life. Perfect for professionals and tech enthusiasts.",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Gaming Laptop",
+      "price": 1499.99,
+      "description": "High-performance gaming laptop with RTX graphics, fast SSD storage, and RGB keyboard. Ideal for gaming and content creation."
+    },
+    {
+      "id": "3",
+      "name": "Wireless Earbuds",
+      "price": 199.99,
+      "description": "Premium wireless earbuds with noise cancellation, spatial audio, and quick charge case. Perfect for music lovers and commuters."
+    },
+    {
+      "id": "4",
+      "name": "Smart Watch",
+      "price": 299.99,
+      "description": "Advanced fitness tracking, heart rate monitoring, GPS, and smartphone integration. Your perfect health and productivity companion."
+    }
+  ]
+}

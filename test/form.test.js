@@ -1,4 +1,4 @@
-import { createLoginForm } from '../js/form';
+import { createLoginForm } from '../src/form';
 import { getByPlaceholderText, fireEvent , getByText} from '@testing-library/dom';
 
 // create test suite

@@ -15,7 +15,7 @@ const toast = document.getElementById('toast');
 const toastMessage = document.getElementById('toastMessage');
 
 // Show toast notification
-function showToast(message, type = 'success') {
+export function showToast(message, type = 'success') {
   toastMessage.textContent = message;
   toast.className = `fixed top-4 right-4 text-white px-6 py-3 rounded-lg shadow-lg transform transition-transform duration-300 z-50 ${
     type === 'success' ? 'bg-green-500' : 'bg-red-500'
@@ -28,7 +28,7 @@ function showToast(message, type = 'success') {
 }
 
 // Reset form to add mode
-function resetToAddMode() {
+export function resetToAddMode() {
   productForm.reset();
   productIdField.value = '';
   formTitle.textContent = 'Add New Product';
@@ -37,7 +37,7 @@ function resetToAddMode() {
 }
 
 // Fetch and display products
-async function fetchProducts() {
+export async function fetchProducts() {
   try {
     const res = await fetch(API_URL);
     const products = await res.json();
@@ -124,7 +124,7 @@ productForm.addEventListener('submit', async (e) => {
 cancelEditButton.addEventListener('click', resetToAddMode);
 
 // Edit product
-async function editProduct(id) {
+export async function editProduct(id) {
   try {
     const res = await fetch(`${API_URL}/${id}`);
     const product = await res.json();
@@ -146,7 +146,7 @@ async function editProduct(id) {
 }
 
 // Delete product
-async function deleteProduct(id) {
+export async function deleteProduct(id) {
   console.log("Delete product "+id);
   
   if (confirm('Are you sure you want to delete this product? This action cannot be undone.')) {

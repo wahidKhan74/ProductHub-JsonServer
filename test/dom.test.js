@@ -1,4 +1,4 @@
-import { createButton , createButtonWithEvent } from "../js/dom";
+import { createButton , createButtonWithEvent } from "../src/dom";
 import { getByText } from "@testing-library/dom";
 
 // Test Suite
